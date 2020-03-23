@@ -1,0 +1,158 @@
+/*
+.g4m-link-item {
+    display: block;
+    background-color: #45acac;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 3px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+.g4m-link-item:hover {
+    text-decoration: none;
+    color: white;
+    background-color: #66d1d1;
+}
+
+.urlworkaround {
+    margin-bottom: 40px;
+    !*margin-top: 20px;*!
+}
+
+!*change embeded navigation*!
+.custom-select {
+    width: -webkit-fill-available;
+    max-width: 80%;
+}
+
+.icon-arrow-right,
+.icon-arrow-left {
+    background: none !important;
+}
+
+.section-navigation a {
+    color: #45acac;
+}
+
+#navbuttons {
+    margin-top: 80px;
+}*/
+
+
+/* ================= new navbuttons ==================== */
+
+#navigation-button-container {
+    /*margin-top: 50px;*/
+    /*margin-top: 60px;*/
+}
+
+#idprev, #idnext, #idhome {
+    display: none;
+}
+
+#labelhome, #labelprev, #labelnext {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    /*max-width: 25%;*/
+    border-radius: 50%;
+    /*background-color: lightgrey;*/
+    background-color: #b8b8b8;
+    transition: ease 0.5s;
+    color: white;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+    margin: 10px;
+}
+
+#labelhome {
+    justify-content: flex-start;
+}
+
+#labelprev {
+    justify-content: flex-start;
+}
+
+#labelnext {
+    justify-content: flex-end;
+}
+
+
+#labelhome:hover, #labelprev:hover, #labelnext:hover {
+    background-color: #ffd34d;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
+    transition: ease 0.5s
+}
+
+#arrowright, #arrowup, #arrowleft {
+    margin: 0 14px;
+    max-width: 20px;
+    height: 50%;
+    /*fill: #e1e1e1;*/
+    fill: #fff;
+    transition: ease 0.5s;
+}
+
+#arrowup {
+    /*margin: 0 12px;*/
+}
+
+#labelnext:hover #arrowright, #labelhome:hover #arrowup, #labelprev:hover #arrowleft {
+    fill: #fff;
+    transition: ease 0.5s;
+}
+
+label[for="idhome"] div.container,
+label[for="idprev"] div.container,
+label[for="idnext"] div.container {
+    margin-top: 8px;
+    /*color: #c6c6c6;*/
+    color: #9b9b9b;
+    transition: ease 0.5s;
+    font-size: 1.1em;
+}
+
+label[for="idhome"] div.container:hover,
+label[for="idprev"] div.container:hover,
+label[for="idnext"] div.container:hover {
+    color: #ffd34d;
+    transition: ease 0.5s;
+}
+
+label[for="idhome"] div.container:hover ~ #labelhome,
+label[for="idprev"] div.container:hover ~ #labelprev,
+label[for="idnext"] div.container:hover ~ #labelnext {
+    background-color: #ffd34d;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
+    transition: ease 0.5s;
+}
+
+label[for="idhome"] div.container:hover ~ #labelhome #arrowup,
+label[for="idprev"] div.container:hover ~ #labelprev #arrowleft,
+label[for="idnext"] div.container:hover ~ #labelnext #arrowright {
+    fill: #fff;
+}
+
+.color-text-navigation-active {
+    color: #ffd34d;
+}
+
+#labelnext:hover ~ .container, #labelhome:hover .container, #labelprev:hover .container {
+    color: #ffd34d;
+}
+
+.translated-text-bottom-navigation {
+    /*font-style: italic;*/
+    /*font-size: 0.9em;*/
+    /*font-size: 0.75em;*/
+    /*font-family: 'Didact Gothic', sans-serif !important;*/
+    font-family: 'Roboto', sans-serif !important;
+}
+
+.addactivecolor {
+    transition: ease 0.5s;
+    color: #ffd34d !important;
+}

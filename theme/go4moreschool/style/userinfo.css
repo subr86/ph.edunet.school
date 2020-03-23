@@ -1,0 +1,146 @@
+.g4m-user-data-container {
+    padding: 20px 30px 15px 25px;
+    border-radius: 2px;
+    position: relative;
+    top: 22px;
+    right: 5px;
+    z-index: 9999;
+    background: #f2f2f2;
+    -webkit-box-shadow: 0 0  1px rgba(178, 178, 178, 0.4);
+    box-shadow: 0 0  1px rgba(178, 178, 178, 0.4);
+    font-weight: 600;
+    font-size: 12px;
+    color: #45acac;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.g4m-user-data-container li {
+    margin: 5px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    white-space: nowrap;
+}
+
+.g4m-user-data-container a {
+    text-decoration: none;
+    color: #45acac;
+}
+
+.g4m-userinfo-wrapper {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.g4m-userinfo-container {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.g4m-userinfo-left {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0 20px 0 0;
+}
+
+.g4m-logo-circle {
+    height: 80px;
+    width: 80px;
+    background-color: #4DC7A0;
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: white;
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.g4m-userinfo-right {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.g4m-userinfo-name {
+    font-size: 1.5rem;
+    color: #393939;
+}
+
+.g4m-userinfo-email {
+    color: gray;
+}
+
+.g4m-userinfo-moodle {
+    margin: 30px 0 10px 0;
+    font-size: 1.4rem;
+    color: #4DC7A0;
+}
+
+.g4m-userinfo-logout {
+    margin: 10px;
+    padding: 5px 10px;
+    border-radius: 2px;
+    background: #4DC7A0;
+    justify-self: flex-start;
+    color: white;
+    white-space: nowrap;
+}
+
+@media all and (max-width: 800px){
+    .g4m-userinfo-container {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .g4m-userinfo-left {
+        padding: 0;
+    }
+    .g4m-userinfo-right {
+        margin-top: 20px;
+    }
+}

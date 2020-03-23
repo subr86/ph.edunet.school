@@ -1,0 +1,258 @@
+<script>
+    var div1 = document.createElement('div');
+    div1.className = "g4m-loader-wrapper";
+    div1.id = 'g4m-loader-wrapper';
+
+    var div2 = document.createElement('div');
+    div2.className = "g4m-loader2";
+    div2.id = '4gm-loader2';
+
+    var div3 = document.createElement('div');
+    div3.className = "g4m-loader3";
+    div3.id = '4gm-loader3';
+
+    var div4 = document.createElement('div');
+    div4.className = "g4m-loader4";
+    div4.id = '4gm-loader4';
+
+    var div5 = document.createElement('div');
+    div5.className = "g4m-loader5";
+    div5.id = '4gm-loader5';
+
+
+    div1.appendChild(div2);
+    div2.appendChild(div3);
+    div3.appendChild(div4);
+    div4.appendChild(div5);
+
+    document.body.insertBefore(div1, document.body.firstChild);
+
+    window.onload = function() {
+        document.getElementById('g4m-loader-wrapper').className = 'g4m-hide-loader';
+    };
+</script>
+
+<div class="g4m-moodle-header-wrapper">
+<header id="g4m-lang-wrap" class="school-page">
+    <div class="go4more-header-container">
+
+        <div class="g4m-wrap-logo-title-container">
+
+            <a href="//ph.edunet.school">
+                <div class="g4m-logo-title-container">
+                    <div class="g4m-logo">
+                        <img src="{{{config.wwwroot}}}/theme/go4moreschool/img/Logo-Edunet.SCHOOL.png" alt="logo">
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <nav role="navigation" id="g4m-main-menu">
+            <input type="checkbox" id="g4m-popup-menu-open">
+
+            <label for="g4m-popup-menu-open" class="g4m-toggle-button toggle-button-school" data-open="our projects" data-close="&#10006;" data-tight="projects" onclick></label>
+
+            <div class="g4m-popup-menu-wrapper">
+                <a href="https://go4more.school" class="g4m-popup-menu-item"> go4more.School </a>
+                <a href="https://go4more.academy" class="g4m-popup-menu-item"> go4more.Academy </a>
+                <a href="https://go4more.training" class="g4m-popup-menu-item"> go4more.Training </a>
+                <a href="https://go4more.institute" class="g4m-popup-menu-item"> go4more.Institute </a>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                    <defs>
+                        <filter id="shadowed-goo">
+                            <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
+                            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo"></feColorMatrix>
+                            <feGaussianBlur in="goo" stdDeviation="3" result="shadow"></feGaussianBlur>
+                            <feColorMatrix in="shadow" mode="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 -0.5" result="shadow"></feColorMatrix>
+                            <feOffset in="shadow" dx="1" dy="1" result="shadow"></feOffset>
+                            <feBlend in2="shadow" in="goo" result="goo"></feBlend>
+                            <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+                        </filter>
+                        <filter id="goo">
+                            <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
+                            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo"></feColorMatrix>
+                            <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+                        </filter>
+                    </defs>
+                </svg>
+            </div>
+        </nav>
+
+        <div class="g4m-user-bar">
+
+            <div class="g4m-lang-bar">
+                <ul class="g4m-lang-list">
+                    <li>
+                        <div class="g4m-lang-item">
+                            <div class="g4m-lang-pic">
+                                <img src="{{{config.wwwroot}}}/theme/go4moreschool/img/svg/uk.svg" alt="" class="g4m-header-pic">
+                            </div>
+                        </div>
+                        <div class="g4m-wrapper-sub-lang">
+                            <ul class="g4m-sub-lang-list">
+                                <li>
+                                    <a href="https://go4more.school">
+                                        <div class="g4m-lang-list-item">
+                                            <div class="g4m-lang-pic">
+                                                <img src="{{{config.wwwroot}}}/theme/go4moreschool/img/svg/uk.svg" alt="" class="g4m-header-pic">
+                                            </div>
+                                            <div class="g4m-lang-name g4m-color-school">
+                                                English
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://go4more.school/de/">
+                                        <div class="g4m-lang-list-item">
+                                            <div class="g4m-lang-pic">
+                                                <img src="{{{config.wwwroot}}}/theme/go4moreschool/img/svg/deutsch.svg" alt="" class="g4m-header-pic">
+                                            </div>
+                                            <div class="g4m-lang-name g4m-color-school">
+                                                Deutsch
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://go4more.school/ua/">
+                                        <div class="g4m-lang-list-item">
+                                            <div class="g4m-lang-pic">
+                                                <img src="{{{config.wwwroot}}}/theme/go4moreschool/img/svg/ukraine.svg" alt="" class="g4m-header-pic">
+                                            </div>
+                                            <div class="g4m-lang-name g4m-color-school">
+                                                Українська
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://go4more.school/pl/">
+                                        <div class="g4m-lang-list-item">
+                                            <div class="g4m-lang-pic">
+                                                <img src="{{{config.wwwroot}}}/theme/go4moreschool/img/svg/flags/pol.svg" alt="" class="g4m-header-pic">
+                                            </div>
+                                            <div class="g4m-lang-name g4m-color-school">
+                                                Polski
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://go4more.school/ru/">
+                                        <div class="g4m-lang-list-item">
+                                            <div class="g4m-lang-pic">
+                                                <img src="{{{config.wwwroot}}}/theme/go4moreschool/img/svg/flags/ru.svg" alt="" class="g4m-header-pic">
+                                            </div>
+                                            <div class="g4m-lang-name g4m-color-school">
+                                                Русский
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://go4more.school/tr/">
+                                        <div class="g4m-lang-list-item">
+                                            <div class="g4m-lang-pic">
+                                                <img src="{{{config.wwwroot}}}/theme/go4moreschool/img/svg/turkey.svg" alt="" class="g4m-header-pic">
+                                            </div>
+                                            <div class="g4m-lang-name g4m-color-school">
+                                                Türkçe
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://go4more.school/ar/">
+                                        <div class="g4m-lang-list-item">
+                                            <div class="g4m-lang-pic">
+                                                <img src="{{{config.wwwroot}}}/theme/go4moreschool/img/svg/flags/sa.svg" alt="" class="g4m-header-pic">
+                                            </div>
+                                            <div class="g4m-lang-name g4m-color-school">
+                                                اللغة العربية
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://go4more.school/per/">
+                                        <div class="g4m-lang-list-item">
+                                            <div class="g4m-lang-pic">
+                                                <img src="{{{config.wwwroot}}}/theme/go4moreschool/img/svg/flags/iran.svg" alt="" class="g4m-header-pic">
+                                            </div>
+                                            <div class="g4m-lang-name g4m-color-school">
+                                                فارسی
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://go4more.school/zh/">
+                                        <div class="g4m-lang-list-item">
+                                            <div class="g4m-lang-pic">
+                                                <img src="{{{config.wwwroot}}}/theme/go4moreschool/img/svg/flags/zh.svg" alt="" class="g4m-header-pic">
+                                            </div>
+                                            <div class="g4m-lang-name g4m-color-school">
+                                                中文
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="g4m-user-icon">
+
+                <div class="g4m-loginned-user-wrapper"><div class="g4m-unloginned-user-container"><img src="{{{config.wwwroot}}}/theme/go4moreschool/img/svg/usericon2.svg" alt="" class="g4m-header-pic"></div>
+                <div class="g4m-user-data-wrapper">
+                    <div class="g4m-user-data-container">
+                        <ul>
+                            <li><a class="popup-sign-in-form g4m-underline-container" href="signin.php">' .$l_signin.'</a></li>
+                            <li><a class="popup-sign-up-form g4m-underline-container" href="signup.php">'.$l_signup.'</a></li>
+                        </ul>
+                    </div >
+                </div >
+            </div>
+
+        </div>
+    </div>
+    </div>
+</header>
+
+<div class="g4m-color-bar g4m-background-school">
+    <div class="g4m-bar-container">
+        <div class="g4m-ins-logo"></div>
+        <div class="g4m-page-navigation">
+            <div class="g4m-wrapper-page-navigation-menu-bar">
+                <svg id="g4m-color-bar-menu-bar" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                     viewBox="0 0 448 512" width="10">
+                    <g>
+                        <path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path>
+                    </g>
+                </svg>
+                <svg id="g4m-color-bar-menu-cross" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                     viewBox="0 0 448 512" width="10">
+                    <g>
+                        <path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path>
+                    </g>
+                </svg>
+
+                <div class="g4m-page-navigation-menu-bar-container g4m-color-hover-underline-school">
+                    <a href="#page"><div class="g4m-page-menu-item g4m-color-school">Go to courses</div></a>
+                    <a href="#g4m-contact"><div class="g4m-page-menu-item g4m-color-school">Contact</div></a>
+                </div>
+            </div>
+
+            <div class="g4m-page-menu">
+                <a href="#page"><div class="g4m-page-menu-item">Go to courses</div></a>
+                <div class="g4m-vline-c-b">|</div>
+                <a href="#g4m-contact"><div class="g4m-page-menu-item">Contact</div></a>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
