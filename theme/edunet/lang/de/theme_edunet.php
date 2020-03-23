@@ -37,7 +37,7 @@ $string['search_site'] = 'Search on site';
 $string['search_forums'] = 'Search on course forums';
 $string['platform_access'] = 'Access to the platform';
 $string['readmore'] = 'Read More';
-$string['stayintouch'] = 'Stay in touch';
+$string['stayintouch'] = 'Kontakt';
 $string['madewitmoodle'] = 'Proudly made with';
 $string['madeby'] = 'Made with';
 $string['by'] = 'by';
@@ -278,5 +278,4 @@ $string['privacy:accessibilitystyles_sitecolorclass'] = 'The current preference 
 $string['privacy:themeEdunetsettings_fonttype'] = 'The current preference for the font type is: {$a}.';
 $string['privacy:themeEdunetsettings_enableaccessibilitytoolbar'] = 'The current preference for enable accessibility toolbar is to show it.';
 
-//Footer
-$string['contacts'] = 'Contacts';
+
