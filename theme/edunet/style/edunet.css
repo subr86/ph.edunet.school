@@ -63,3 +63,8 @@ nav.navbar ul.navbar-nav li>a, nav.navbar ul.navbar-nav .nav-item>a {
     padding-bottom: 0;
     display: none;
 }
+
+#map {
+    height: 350px;
+    width: 100%;
+}
