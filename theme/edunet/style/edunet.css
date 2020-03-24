@@ -1,3 +1,65 @@
 nav.navbar .navbar-brand .logo img {
     padding: 5px 0;
 }
+
+#top-footer{
+    background-size: cover;
+}
+
+a, a:visited, a:hover {
+    color: #64BA6D;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #64ba6d;
+    border-color: #64ba6d;
+}
+
+#nav-drawer.closed .list-group .list-group-item:hover {
+    background-color: #64ba6d;
+}
+
+#nav-drawer .list-group .list-group-item:hover {
+    background-color: #64ba6d;
+}
+#nav-drawer-footer{
+    background-color: #64ba6d;
+}
+#sidepreopen-control {
+    background-color: #64ba6d;
+}
+
+#page-site-index #frontpage-available-course-list h2:before, #page-site-index #frontpage-available-course-list h2:after {
+    border-bottom: 1px solid #64ba6d;
+    border-top: 1px solid #64ba6d;
+}
+
+nav.navbar ul.navbar-nav .popover-region .popover-region-toggle {
+    color: #64ba6d;
+}
+
+#page-site-index #frontpage-available-course-list h2 {
+    color: #64ba6d;
+}
+
+nav.navbar ul.navbar-nav .lang-menu .nav-link {
+    color: #64ba6d;
+}
+
+nav.navbar ul.navbar-nav li>a, nav.navbar ul.navbar-nav .nav-item>a {
+    text-decoration: none;
+    color: #64ba6d;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #2CBA3F;
+    border-color: #2CBA3F;
+}
+
+#page-site-index.notloggedin .frontpage-maincontent {
+    padding-top: 0;
+    padding-bottom: 0;
+    display: none;
+}

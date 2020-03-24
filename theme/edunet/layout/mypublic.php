@@ -94,4 +94,4 @@ $templatecontext['competencyplans'] = $competencyplans;
 
 $templatecontext['headerbuttons'] = \theme_moove\util\extras::get_mypublic_headerbuttons($context, $user);
 
-echo $OUTPUT->render_from_template('theme_moove/mypublic', $templatecontext);
+echo $OUTPUT->render_from_template('theme_edunet/mypublic', $templatecontext);

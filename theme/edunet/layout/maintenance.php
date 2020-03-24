@@ -34,4 +34,4 @@ $templatecontext = [
     'output' => $OUTPUT
 ];
 
-echo $OUTPUT->render_from_template('theme_moove/maintenance', $templatecontext);
+echo $OUTPUT->render_from_template('theme_edunet/maintenance', $templatecontext);
