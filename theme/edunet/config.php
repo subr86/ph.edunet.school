@@ -18,7 +18,7 @@ $THEME->name = 'edunet';
 // extensions.
 $THEME->sheets = ['edunet'];
 
-$THEME->javascripts=['edunet'];
+$THEME->javascripts=['jquery.min', 'edunet'];
 
 // This is a setting that can be used to provide some styling to the content in the TinyMCE text editor. This is no longer the
 // default text editor and "Atto" does not need this setting so we won't provide anything. If we did it would work the same

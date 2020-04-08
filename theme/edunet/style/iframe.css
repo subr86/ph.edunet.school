@@ -1,0 +1,8 @@
+nav, 
+#top-footer, 
+#nav-drawer,
+#page-header,
+#nav-drawer-footer
+{
+display:none!important;
+}
